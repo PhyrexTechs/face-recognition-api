@@ -12,7 +12,7 @@ const profile = require('./controllers/profile');
 const db = knex({
     client: 'pg',
     connection: {
-        connectionString: proccess.env.DATABSE_URL,
+        connectionString: process.env.DATABSE_URL,
         ssl: true
     }
 })
